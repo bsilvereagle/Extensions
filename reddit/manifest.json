@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Reddit",
+  "version": "0.0.1",
+  "description": "Improved CSS for Reddit",
+
+  "permissions": [
+    "http://www.reddit.comu/",
+    "https://www.reddit.com/"
+  ],
+
+  "content_scripts": [
+    {
+        "matches": ["http://www.reddit.com/user/geeksanon/m/hckrnws"],
+        "js": ["main.js"],
+        "css": ["style.css"],
+        "run_at": "document_end",
+        "all_frames": true
+    }
+  ]
+}

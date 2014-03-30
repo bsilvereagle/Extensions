@@ -1,0 +1,56 @@
+.side, .listing-chooser, #header, #header-bottom-left, #sr-header-area {
+	visibility:hidden;
+}
+
+.content {
+	position:absolute;
+	top:25px !important;
+	bottom:0px;
+	right:0px;
+	left:0px;
+	z-index:50;
+	margin:0px !important;	
+	background:#1d1d1d;	
+}                    
+
+#siteTable {
+	background: #1d1d1d;
+}
+
+#header-bottom-right {
+	top:0px !important;
+	height:15px;
+	visibility:visible;
+	border:1px solid grey;
+	border-top-left-radius: 0px !important;
+	width:100%;
+	background-color:#B2B2B2 !important;
+	color:white;
+}
+
+.thing .title {
+	color:rgb(223, 223, 223) !important;
+	font-size:medium;
+}
+
+.thing .title:visited, .thing.visited {
+	color:black;
+}
+
+.organic-listing, .promoted {
+	visibility:hidden;
+	height:0px;
+}
+
+a:visited{
+	color: rgb(102, 102, 102);
+}
+
+.thing .thumbnail {
+	visibility:hidden;
+	width:0px;
+}
+
+.tagline a {
+	color: ##00a0ff;
+}

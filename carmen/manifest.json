@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "OSU Carmen",
+  "version": "0.0.1",
+  "description": "Improved CSS for Carmen",
+
+  "permissions": [
+    "http://carmen.osu.edu/",
+    "https://carmen.osu.edu/"
+  ],
+
+  "content_scripts": [
+    {
+        "matches": ["https://carmen.osu.edu/*/View"],
+        "js":[],
+        "css": ["style.css"],
+        "run_at": "document_end",
+        "all_frames": true
+    },
+    {
+    	"matches":["https://carmen.osu.edu/*"],
+    	"js": ["main.js"],
+    	"run_at":"document_idle",
+    	"all_frames":true
+    }
+  ]
+}
